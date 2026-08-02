@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akhil weds Rasagna — A Royal Union</title>
-  
+
   <!-- Open Graph Meta Tags for Social Media Sharing -->
   <meta property="og:title" content="Akhil weds Rasagna — A Royal Union">
-  <meta property="og:description" content="Two souls, one destiny — with the blessings of our families, we joyfully invite you to celebrate the beginning of our forever.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:description"
+    content="Two souls, one destiny — with the blessings of our families, we joyfully invite you to celebrate the beginning of our forever.">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop">
   <meta property="og:url" content="https://your-wedding-url.com">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -189,9 +191,9 @@
       animation: kenBurns 25s ease-in-out infinite alternate;
     }
 
-    #hero > *:not(.bg-watermark):not(.bg-overlay):not(.bg-texture),
-    #events > *:not(.bg-watermark):not(.bg-overlay):not(.bg-texture),
-    #closing > *:not(.bg-watermark):not(.bg-overlay):not(.bg-texture) {
+    #hero>*:not(.bg-watermark):not(.bg-overlay):not(.bg-texture),
+    #events>*:not(.bg-watermark):not(.bg-overlay):not(.bg-texture),
+    #closing>*:not(.bg-watermark):not(.bg-overlay):not(.bg-texture) {
       position: relative;
       z-index: 2;
     }
@@ -200,6 +202,7 @@
       0% {
         transform: translate(-50%, -50%) scale(1.02);
       }
+
       100% {
         transform: translate(-50%, -50%) scale(1.12);
       }
@@ -934,7 +937,8 @@
     }
 
     .venue-name em {
-      font-family: 'Playfair Display', serif; font-style: italic;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
       font-style: normal;
       color: var(--gold-deep);
       font-size: 1.15em;
@@ -1051,7 +1055,8 @@
     }
 
     #closing h2 em {
-      font-family: 'Playfair Display', serif; font-style: italic;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
       color: var(--gold-light);
       font-style: normal;
       font-size: 1.25em;
@@ -1155,36 +1160,82 @@
     }
 
     /* ── MUSIC BUTTON REMOVED ── */
-  
+
     /* Mobile Responsiveness Improvements */
     @media (max-width: 768px) {
-      .invitation-card { padding: 30px 20px !important; }
-      .story-grid { gap: 20px !important; }
-      section, .section-block { padding: 60px 16px !important; }
-      #events, #venue, #closing { padding: 60px 16px !important; }
-      .hero-tagline { font-size: 1rem !important; }
-      .timer-grid { flex-wrap: wrap; gap: 10px; }
-      .accent-photo { right: -5px !important; bottom: -15px !important; width: 60% !important; }
-      .hero-names { font-size: 3.5rem !important; }
-      #hero { min-height: 100dvh !important; }
-      .cards-grid { grid-template-columns: 1fr !important; }
-      .venue-card { padding: 30px 20px !important; }
+      .invitation-card {
+        padding: 30px 20px !important;
+      }
+
+      .story-grid {
+        gap: 20px !important;
+      }
+
+      section,
+      .section-block {
+        padding: 60px 16px !important;
+      }
+
+      #events,
+      #venue,
+      #closing {
+        padding: 60px 16px !important;
+      }
+
+      .hero-tagline {
+        font-size: 1rem !important;
+      }
+
+      .timer-grid {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .accent-photo {
+        right: -5px !important;
+        bottom: -15px !important;
+        width: 60% !important;
+      }
+
+      .hero-names {
+        font-size: 3.5rem !important;
+      }
+
+      #hero {
+        min-height: 100dvh !important;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .venue-card {
+        padding: 30px 20px !important;
+      }
     }
-    
+
     /* Invitation Landing Overlay */
     #inviteOverlay {
       position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: var(--maroon-deep);
       z-index: 9999;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       color: var(--ivory);
       transition: opacity 1.2s ease, visibility 1.2s ease;
     }
+
     #inviteOverlay.hidden {
       opacity: 0;
       visibility: hidden;
     }
+
     #inviteOverlay h2 {
       font-family: 'Great Vibes', cursive;
       font-size: clamp(3rem, 10vw, 6rem);
@@ -1192,6 +1243,7 @@
       color: var(--champagne);
       text-align: center;
     }
+
     #inviteOverlay p {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.4rem;
@@ -1200,6 +1252,7 @@
       text-transform: uppercase;
       text-align: center;
     }
+
     .open-btn {
       background: transparent;
       border: 1px solid var(--champagne);
@@ -1212,14 +1265,16 @@
       font-size: 1rem;
       transition: all 0.4s ease;
     }
+
     .open-btn:hover {
       background: var(--champagne);
       color: var(--maroon-deep);
     }
+
     body.locked {
       overflow: hidden;
     }
-</style>
+  </style>
 </head>
 
 <body class="locked">
@@ -1230,7 +1285,7 @@
     <button class="open-btn" onclick="openInvite()">Open Invitation</button>
   </div>
   <!-- BACKGROUND MUSIC (Krishna Flute) -->
-  
+
   <!-- BACKGROUND MUSIC -->
   <audio id="bgMusic" loop preload="auto">
     <source src="media/A_Promise_Held.mp3" type="audio/mpeg">
@@ -1241,11 +1296,11 @@
       const overlay = document.getElementById('inviteOverlay');
       overlay.classList.add('hidden');
       document.body.classList.remove('locked');
-      
+
       // Play the music now that the user has interacted
       const bgMusic = document.getElementById('bgMusic');
       bgMusic.volume = 0.5;
-      bgMusic.play().catch(() => {});
+      bgMusic.play().catch(() => { });
     }
   </script>
 
@@ -1337,13 +1392,9 @@
           <div class="corner-mark tr2"></div>
           <div class="corner-mark bl2"></div>
           <div class="corner-mark br2"></div>
-          <img
-            src="media/rasagna-akhil.jpeg"
-            alt="Akhil and Rasagna" />
+          <img src="media/rasagna-akhil.jpeg" alt="Akhil and Rasagna" />
           <div class="accent-photo">
-            <img
-              src="media/akhil-rasagna.jpeg"
-              alt="Akhil and Rasagna, garlanded" />
+            <img src="media/akhil-rasagna.jpeg" alt="Akhil and Rasagna, garlanded" />
           </div>
         </div>
         <div class="story-text">
@@ -1412,10 +1463,15 @@
 
     <div class="venue-card reveal reveal-delay-3">
       <p class="venue-address">Hindupur, Andhra Pradesh – 515201<br>India</p>
-      <div style="margin: 20px auto; padding: 10px; background: white; display: inline-block; border-radius: 8px; border: 1px solid var(--gold); box-shadow: 0 4px 15px rgba(212,175,55,0.2);">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DVasavi%2BDharmasala%2C%2BHindupur" alt="Scan for Location" style="display: block; width: 120px; height: 120px;">
+      <div
+        style="margin: 20px auto; padding: 10px; background: white; display: inline-block; border-radius: 8px; border: 1px solid var(--gold); box-shadow: 0 4px 15px rgba(212,175,55,0.2);">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DVasavi%2BDharmasala%2C%2BHindupur"
+          alt="Scan for Location" style="display: block; width: 120px; height: 120px;">
       </div>
-      <p style="font-size: 0.8rem; color: var(--gold-light); margin-top: -10px; margin-bottom: 20px; font-family: 'Inter', sans-serif; letter-spacing: 0.1em; text-transform: uppercase;">Scan for Location</p>
+      <p
+        style="font-size: 0.8rem; color: var(--gold-light); margin-top: -10px; margin-bottom: 20px; font-family: 'Inter', sans-serif; letter-spacing: 0.1em; text-transform: uppercase;">
+        Scan for Location</p>
       <p class="venue-line">Where two hearts become one,<br>and a new journey begins.</p>
       <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiYuZauu_CVAxUAAAAAHQAAAAAQBQ..i&rlz=1C1GCEA_en-GBIN1221IN1224&pvq=Cg0vZy8xMWNzcTd3cTNuIjMKLXNyaSB2YXNhdmkga2FueWFrYSBwYXJhbWVzaHdhcmkgZnVuY3Rpb24gaGFsbBACGAM&lqi=CjZzcmkgdmFzYXZpIGthbnlha2EgcGFyYW1lc2h3YXJpIGZ1bmN0aW9uIGhhbGwgaGluZHVwdXJI9LD34-KrgIAIWkYQABABEAIQAxAEEAUYASI2c3JpIHZhc2F2aSBrYW55YWthIHBhcmFtZXNod2FyaSBmdW5jdGlvbiBoYWxsIGhpbmR1cHVykgERY29udmVudGlvbl9jZW50ZXKaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjFuTTA1VlVsRk5NM0J6VkVST05sbHViSE5sYlRsclV6SjBhazVIWXhBQvoBBAgAEDk&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3bb1a3a1d49d284d:0x7080ffb26d6a791b"
         target="_blank" rel="noopener noreferrer" class="gold-link">Open In Google Maps →</a>
